@@ -2,3 +2,4 @@
 *.ctxt
 package.bluej
 .TXT
+.DS_Store
