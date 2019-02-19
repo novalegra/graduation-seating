@@ -16,6 +16,7 @@ public class GradRunner
         // the last name of whoever the principal is MUST BE "Rick-Kennel"
         Scanner keyboard = new Scanner (System.in);
         
+        System.out.print("Input file path: ");
         String inputPath = keyboard.next();
         
         System.out.print("Output file path: ");
