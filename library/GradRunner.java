@@ -17,11 +17,10 @@ public class GradRunner
         // the last name of whoever the principal is MUST BE "Rick-Kennel"
         Scanner keyboard = new Scanner (System.in);
         
-        //System.out.print("Input file path: ");
-        String inputPath = "/Users/annaquinlan/Downloads/mockData.csv"; //keyboard.next();
+        String inputPath = keyboard.next();
         
-        //System.out.print("Output file path: ");
-        String outputPath = "/Users/annaquinlan/Downloads/testExport.csv"; // keyboard.next();
+        System.out.print("Output file path: ");
+        String outputPath = keyboard.next();
         
         System.out.print("Output with a flag for speakers/musicians? (true/false): ");
         boolean outputPref = false;
