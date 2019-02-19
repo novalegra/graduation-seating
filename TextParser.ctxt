@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.target=TextParser
-comment1.params=file
-comment1.target=java.util.ArrayList\ getFileInfo(java.lang.String)
-numComments=2
