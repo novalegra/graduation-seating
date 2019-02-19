@@ -12,6 +12,7 @@ public class SortIntoRows
     public static ArrayList<ArrayList<Teacher>> putStudentsInRows (ArrayList<Teacher> data){
         ArrayList<ArrayList<Teacher>> overallSeatingChart = new ArrayList<ArrayList<Teacher>>();
         
+        // each ArrayList is a row of seating
         ArrayList<Teacher> r1 = new ArrayList<Teacher>();
         ArrayList<Teacher> r2 = new ArrayList<Teacher>();
         ArrayList<Teacher> r3 = new ArrayList<Teacher>();

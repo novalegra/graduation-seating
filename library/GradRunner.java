@@ -1,7 +1,6 @@
 
 
 /**
- * Write a description of class GradRunner here.
  *
  * @author Anna Quinlan, MAHS '19
  */
