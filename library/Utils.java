@@ -68,7 +68,7 @@ public class Utils
     
     public static ArrayList<Teacher> dealWithSimone (Teacher simoneDiplomas){
         
-        //remove Simone, she doesn't need a seat because she sits up front
+        //remove principal, he/she doesn't need a seat because she sits up front
         simoneDiplomas.removeStudent(0);
         ArrayList<Teacher> finalOutput = new ArrayList<Teacher>();
         ArrayList<Student> simoneKidsIntermediate = new ArrayList<Student>();
@@ -86,9 +86,6 @@ public class Utils
             simoneKidsIntermediate.add(simoneDiplomas.getStudent(0));
             simoneDiplomas.removeStudent(0);
         }
-        /* for (Teacher t:finalOutput){
-            System.out.println(t);
-        } */
         return finalOutput;
     }
 }
