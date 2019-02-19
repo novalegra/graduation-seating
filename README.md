@@ -1,6 +1,3 @@
-
-AUTHORS: Anna Quinlan, MAHS '19
-
 This program takes an input .csv file; this can be easily exported from an Excel/Google Drive spreadsheet.
 It will correctly sort a maximum of ~740 students and teachers.
 
@@ -11,11 +8,11 @@ Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if
 EXAMPLE INPUTS INTO CSV FILE:                                                                                  
 A student named Jamie Montoya, who is a graduation speaker and will get her diploma from Patrick Roisen                                                                                   
 1     2       3       4      5     6
-Jamie Montoya Patrick Roisen true  false                                                                                       
+/n Jamie Montoya Patrick Roisen true  false                                                                                       
 
 A student named Alex Wong, who will get his diploma from James Green                                                                                  
 1     2       3       4      5     6
-Alex  Wong    James   Green  false false  
+/nAlex  Wong    James   Green  false false  
 
 A student named Hannah Smith, who is in band and will get her diploma from the principal                                                                                
 1       2       3        4            5     6
