@@ -8,7 +8,7 @@ import java.util.Comparator;
 
 public class SortIntoRows
 {
-    // 41, 44 (+3), 47 (+3), 51 (+4), 56 (+5), 60 (+4), 63 (+3), 66 (+2), 70 (+4)
+
     public static ArrayList<ArrayList<Teacher>> putStudentsInRows (ArrayList<Teacher> data){
         ArrayList<ArrayList<Teacher>> overallSeatingChart = new ArrayList<ArrayList<Teacher>>();
         
@@ -34,7 +34,7 @@ public class SortIntoRows
                 break;
             }
         }
-        // sort Simone's students into rows
+        // sort principal's students into rows
         if (index != -1){
             ArrayList<Teacher> smallerSimoneGroups = Utils.dealWithSimone(data.get(index));
                 
