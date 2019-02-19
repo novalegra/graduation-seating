@@ -4,14 +4,8 @@ AUTHORS: Anna Quinlan, MAHS '19
 This program takes an input .csv file; this can be easily exported from an Excel/Google Drive spreadsheet.
 It will correctly sort a maximum of ~740 students and teachers.
 
-To get proper results, the .csv data format MUST be:
-1                       2                   3                       4                   
-Student First Name      Student Last Name   Teacher First Name      Teacher Last Name   
-   
-5                                       6                                                                                        
-if student is a graduation speaker      if student is a musician (choir, band, etc)                                          
-(true or false, case doesn't matter)    (true or false, case doesn't matter)       
-                                                                  
+To get proper results, the .csv data format MUST be:               
+Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if student is a graduation speaker (true or false, case doesn't matter), if student is a musician (choir, band, etc; true or false, case doesn't matter)                                                                               
 * the algorithm will split students being handed a diploma by the principal into groups of 8, and distribute them throughout the rows. If you want to take advantage of this feature, the name of the "teacher" MUST be Simone Rick-Kennel, regardless of who the current principal is
                                                                                         
 EXAMPLE INPUTS INTO CSV FILE:                                                                                  
