@@ -7,13 +7,13 @@ Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if
                                                                                         
 EXAMPLE INPUTS INTO CSV FILE:                                                                                  
 A student named Jamie Montoya, who is a graduation speaker and will get her diploma from Patrick Roisen                                                                                   
-Jamie Montoya Patrick Roisen true  false                                                                                       
+Jamie, Montoya, Patrick, Roisen, true,  false                                                                                       
 
 A student named Alex Wong, who will get his diploma from James Green                                                                                  
-Alex  Wong    James   Green  false false  
+Alex,  Wong,    James,   Green,  false, false  
 
 A student named Hannah Smith, who is in band and will get her diploma from the principal                                                                                
-Hannah  Smith   Simone   Rick-Kennel  false true
+Hannah,  Smith,   Simone,   Rick-Kennel,  false, true
 
 USE OF PROGRAM
   1. Run the "void main (String [] args)" of the GradRunner class.
