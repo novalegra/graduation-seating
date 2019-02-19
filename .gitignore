@@ -1,1 +1,4 @@
-
+*.class
+*.ctxt
+package.bluej
+.TXT
