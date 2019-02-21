@@ -7,10 +7,10 @@ Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if
                                                                                         
 EXAMPLE INPUTS INTO CSV FILE:                                                                                  
 A student named Jamie Montoya, who is a graduation speaker and will get her diploma from Patrick Roisen                                                                                   
-Jamie, Montoya, Patrick, Roisen, true,  false                                                                                       
+Jamie, Montoya, Patty, Kim, true,  false                                                                                       
 
 A student named Alex Wong, who will get his diploma from James Green                                                                                  
-Alex,  Wong,    James,   Green,  false, false  
+Alex,  Wong,    James,   Smith,  false, false  
 
 A student named Hannah Smith, who is in band and will get her diploma from the principal                                                                                
 Hannah,  Smith,   Simone,   Rick-Kennel,  false, true
