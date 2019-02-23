@@ -58,7 +58,9 @@ public class SortIntoRows
                     }
                     r12.add(smallerSimoneGroups.get(j)); row++;
                 }
-            }        
+        }  
+        
+        
         for (int i=0; i<data.size(); i++){
             if (data.get(i).isPrincipal() == true){
                 continue;

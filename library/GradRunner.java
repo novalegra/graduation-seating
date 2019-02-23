@@ -16,7 +16,7 @@ public class GradRunner
         // the last name of whoever the principal is MUST BE "Rick-Kennel"
         
         boolean outputPref = false;
-        if (outputPreferences.toLowerCase()=="true"){outputPref=true;}
+        if (outputPreferences.equals("true") || outputPreferences.equals("True") ||outputPreferences.equals("yes") || outputPreferences.equals("Yes")){outputPref=true;}
         
         try {
             ArrayList<Teacher> teacherData = TextParser.getFileInfo(inputPath);
@@ -31,5 +31,6 @@ public class GradRunner
        
         
         }
+
 }
 

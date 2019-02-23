@@ -133,6 +133,7 @@ public class GradAlgorithmApplication extends Application {
                     showAlert(Alert.AlertType.ERROR, gridPane.getScene().getWindow(), "Form Error!", "Please enter a boolean value (true/false)");
                     return;
                 }*/
+                
                 GradRunner.coordinateGradRunner(inputPathField.getText(), exportPathField.getText(), flagField.getText());
                 showAlert(Alert.AlertType.CONFIRMATION, gridPane.getScene().getWindow(), "Seating Successful!", "You\'ll find the arrangement at " + exportPathField.getText());
             }
