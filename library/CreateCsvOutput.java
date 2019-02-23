@@ -10,6 +10,6 @@ public class CreateCsvOutput
         CsvWriter writer = new CsvWriter(); 
          
         //export data to a csv file 
-        writer.exportCsv(seatingChart, outputFilePath, showFlags);//"/Users/annaquinlan/Downloads/testExport.csv");
+        writer.exportCsv(seatingChart, outputFilePath, showFlags);
     }
 }

@@ -60,14 +60,16 @@ public class Teacher
    
     public boolean containsSpeaker(){
         for (int i=0; i<students.size(); i++){
-            if (students.get(i).isSpeaker()){return true;}
+            if (students.get(i).isSpeaker()){//System.out.println(firstName+" "+lastName+ " contains musician"); 
+                return true;}
         }
         return false;
     }
     
     public boolean containsMusician(){
         for (int i=0; i<students.size(); i++){
-            if (students.get(i).isMusician()){return true;}
+            if (students.get(i).isMusician()){//System.out.println(firstName+" "+lastName+ " contains musician"); 
+                return true;}
         }
         return false;
     }
@@ -90,8 +92,14 @@ public class Teacher
     public String toString (){
         String output="";
         if (isPrincipal()){
-            output+="!Principal ";
+            output+="!DiplomaByPrincipal ";
         }
+        /*if (containsMusician()){
+            output+="!HasMusic ";
+        }
+        if (containsSpeaker()){
+            output+="!HasSpeaker ";
+        }*/
         for (int i=0; i<students.size()-1; i++){
             output+= students.get(i)+", ";
         }

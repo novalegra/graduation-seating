@@ -29,16 +29,12 @@ public class CsvWriter {
                 for (int j = 0; j < twoDimensionalData.get(i).size(); j++) { 
                     if (showFlags){
                             writer.append( 
-                                //NOTE: for demonstration purposes we use the toString() method 
                                 twoDimensionalData.get(i).get(j).toStringWithFlags() 
-                                //use an alternative to toString() if it is not implemented as needed. 
                                 );
                             }
                     else {
                         writer.append( 
-                                //NOTE: for demonstration purposes we use the toString() method 
                                 twoDimensionalData.get(i).get(j).toString() 
-                                //use an alternative to toString() if it is not implemented as needed. 
                                 );
                         }
                     //Don't forget the delimiter 

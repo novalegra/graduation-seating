@@ -26,7 +26,6 @@ public class SortIntoRows
         ArrayList<Teacher> r11 = new ArrayList<Teacher>();
         ArrayList<Teacher> r12 = new ArrayList<Teacher>();
         
-        data = Utils.sortStudents(data);
         int index=-1;
         // find index of principal
         for (int q=0; q<data.size(); q++){

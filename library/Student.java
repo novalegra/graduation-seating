@@ -59,7 +59,7 @@ public class Student
     public void updateMusician (boolean i){
         musician = i;
     }
-    
+     
     public String toStringWithFlags(){
         if (isSpeaker()){
             return "!Speaker "+ getFirstName()+ " " +getLastName();
@@ -71,6 +71,12 @@ public class Student
     }
     
     public String toString(){
+        if (isSpeaker()){
+            return "!Speaker "+ getFirstName()+ " " +getLastName();
+        }
+        else if (isMusician()){
+            return "!Music "+ getFirstName()+ " " +getLastName();
+        }
         return getFirstName()+ " " +getLastName();
     }
 }

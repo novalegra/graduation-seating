@@ -20,7 +20,7 @@ public class Utils
                     }
                   else {return 0;}
                }});
-               
+            //System.out.print(data);   
             return data;
             }
             
@@ -45,9 +45,6 @@ public class Utils
     }
     
     public static ArrayList<Teacher> sortStudents (ArrayList<Teacher> data){
-        //for (int i=0; i<data.size();i++){
-        //    data.get(i).sortByLastName();
-        //}
         data = Utils.sortTeachersAlphabetically (data);
         data = Utils.sortBySpeakerMusician (data);
         
