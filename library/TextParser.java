@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class TextParser
 {
 
-    public static ArrayList<Teacher> getFileInfo (String file){
+    public static ArrayList<Teacher> getFileInfo (String file, boolean outputFlags){
         
         // make into scanner to input path
         String csvFile = file;
@@ -49,12 +49,12 @@ public class TextParser
                 //if teacher class already exists
                 if (teachersInstantiated.contains(user[3])){
                     teacherPosition = teachersInstantiated.indexOf(user[3]);
-                    teachers.get(teacherPosition).addStudent(user[0], user[1], speaker, music);
+                    teachers.get(teacherPosition).addStudent(user[0], user[1], speaker, music, outputFlags);
                 }
                 // instantiate teacher then add student
                 else{
                     Teacher t = new Teacher (user[2], user[3]);
-                    t.addStudent(user[0], user[1], speaker, music);
+                    t.addStudent(user[0], user[1], speaker, music, outputFlags);
                     teachers.add(t);
                     teachersInstantiated.add(user[3]);
                 }

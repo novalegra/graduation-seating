@@ -16,8 +16,8 @@ public class Teacher
         lastName = last;
     }
     
-    public void addStudent (String fN, String lN, boolean grad, boolean music){
-        students.add(new Student(fN, lN, grad, music));
+    public void addStudent (String fN, String lN, boolean grad, boolean music, boolean flags){
+        students.add(new Student(fN, lN, grad, music, flags));
     }
     
     public void addInstantiatedStudent (Student stud){
@@ -80,14 +80,14 @@ public class Teacher
         return false;
     }
     
-    public String toStringWithFlags (){
+    /*public String toStringWithFlags (){
         String output="";
         for (int i=0; i<students.size()-1; i++){
             output+= students.get(i).toStringWithFlags()+", ";
         }
         output+=students.get(students.size()-1);
         return output+"\n";
-    }
+    }*/
     
     public String toString (){
         String output="";

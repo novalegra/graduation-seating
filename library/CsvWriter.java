@@ -21,23 +21,16 @@ public class CsvWriter {
         this.delimiter = delimiter; 
     } 
 
-    public void exportCsv(ArrayList<ArrayList<Teacher>> twoDimensionalData, String filename, boolean showFlags) { 
+    public void exportCsv(ArrayList<ArrayList<Teacher>> twoDimensionalData, String filename) { 
         try { 
             FileWriter writer = new FileWriter(filename); 
 
             for (int i = 0; i < twoDimensionalData.size(); i++) { 
                 for (int j = 0; j < twoDimensionalData.get(i).size(); j++) { 
-                    if (showFlags){
-                            writer.append( 
-                                twoDimensionalData.get(i).get(j).toStringWithFlags() 
-                                );
-                            }
-                    else {
-                        writer.append( 
+                    writer.append( 
                                 twoDimensionalData.get(i).get(j).toString() 
                                 );
-                        }
-                    //Don't forget the delimiter 
+                    //If it's the last student, add the delimiter 
                     if (j < twoDimensionalData.get(i).size() - 1) { 
                         writer.append(delimiter); 
                     } 
