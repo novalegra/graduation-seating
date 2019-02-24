@@ -6,10 +6,10 @@ Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if
 * the algorithm will split students being handed a diploma by the principal into groups of 8, and distribute them throughout the rows. If you want to take advantage of this feature, the name of the "teacher" MUST be Simone Rick-Kennel, regardless of who the current principal is
                                                                                         
 EXAMPLE INPUTS INTO CSV FILE:                                                                                  
-A student named Jamie Montoya, who is a graduation speaker and will get her diploma from Patrick Roisen                                                                                   
+A student named Jamie Montoya, who is a graduation speaker and will get her diploma from Patty Kim                                                                                  
 Jamie, Montoya, Patty, Kim, true,  false                                                                                       
 
-A student named Alex Wong, who will get his diploma from James Green                                                                                  
+A student named Alex Wong, who will get his diploma from James Smith                                                                                 
 Alex,  Wong,    James,   Smith,  false, false  
 
 A student named Hannah Smith, who is in band and will get her diploma from the principal                                                                                
