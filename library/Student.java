@@ -5,13 +5,14 @@
 public class Student
 {
     private String firstName, lastName;
-    private boolean gradSpeaker, musician;
+    private boolean gradSpeaker, musician, flags;
     
-    public Student (String fN, String lN, boolean grad, boolean m){
+    public Student (String fN, String lN, boolean grad, boolean m, boolean f){
         firstName = fN;
         lastName = lN;
         gradSpeaker = grad;
         musician = m;
+        flags = f;
     }
     
     public Student (String fN, String lN){
@@ -19,6 +20,7 @@ public class Student
         lastName = lN;
         gradSpeaker = false;
         musician = false;
+        flags = false;
     }
     
     public Student (String lN){
@@ -26,6 +28,7 @@ public class Student
         lastName = lN;
         gradSpeaker = false;
         musician = false;
+        flags = false;
     }
     
     public String getFirstName(){
@@ -44,6 +47,10 @@ public class Student
         return musician;
     }
     
+    public boolean showFlags(){
+        return flags;
+    }
+    
     public void updateLastName (String lN){
         lastName = lN;
     }
@@ -60,23 +67,27 @@ public class Student
         musician = i;
     }
      
-    public String toStringWithFlags(){
-        if (isSpeaker()){
-            return "!Speaker "+ getFirstName()+ " " +getLastName();
+    /*public String toStringWithFlags(){
+        String output = "";
+        if (this.isSpeaker()){
+            output+= "!Speaker ";
         }
-        else if (isMusician()){
-            return "!Music "+ getFirstName()+ " " +getLastName();
+        if (this.isMusician()){
+            output+= "!Music ";
         }
-        return getFirstName()+ " " +getLastName();
-    }
+        output+=getFirstName()+ " " +getLastName();
+        return output;
+    }*/
     
     public String toString(){
-        if (isSpeaker()){
-            return "!Speaker "+ getFirstName()+ " " +getLastName();
+        String output = "";
+        if (isSpeaker() && showFlags()){
+            output+= "!Speaker ";
         }
-        else if (isMusician()){
-            return "!Music "+ getFirstName()+ " " +getLastName();
+        if (isMusician() && showFlags()){
+            output+= "!Music ";
         }
-        return getFirstName()+ " " +getLastName();
+        output+=getFirstName()+ " " +getLastName();
+        return output;
     }
 }
