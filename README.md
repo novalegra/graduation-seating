@@ -1,3 +1,4 @@
+![Alt text](https://github.com/novalegra/graduation-seating/blob/master/RAM_1036.jpg "Graduation using the graduation-seating algorithm")
 This program takes an input .csv file; this can be easily exported from an Excel/Google Drive spreadsheet.
 It will correctly sort a maximum of ~740 students and teachers.
 
