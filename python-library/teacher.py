@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec  7 08:30:16 2019
+
+@author: annaquinlan
+"""
 from student import Student
 
 class Teacher:
@@ -9,7 +16,7 @@ class Teacher:
         self.last_name = last_name
 
     def __lt__(self, other):
-        return self.last_name < other.last_name or not has_student_with_priority
+        return self.has_student_with_priority
 
     def __str__(self):
         output = ""
@@ -28,6 +35,16 @@ class Teacher:
 
         self.students.append(Student(first, last, has_priority))
 
+    def add_instantiated_student(self, student):
+        if student.has_priority:
+            self.has_student_with_priority = True
+
+        self.students.append(student)
+
+    def remove_student(self, index):
+        if 0 <= index < len(self.students):
+            del self.students[index]
+
     def add_teacher(self):
         self.students.insert(0, Student(self.first_name, self.last_name, False))
 
@@ -35,12 +52,12 @@ class Teacher:
         self.students.sort()
 
     def get_number_of_students(self):
-        return len(students)
+        return len(self.students)
 
-    def get_student(position):
+    def get_student(self, position):
         return students[position] if position < len(students) else None
 
-    def is_principal(principal_first, principal_last):
-        return (lower(self.first_name) == lower(principal_first) 
-                and lower(self.last_name) == lower(principal_last)
+    def is_principal(self, principal_first, principal_last):
+        return (self.first_name.lower() == principal_first.lower() 
+                and self.last_name.lower() == principal_last.lower()
                 )

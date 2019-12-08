@@ -3,3 +3,5 @@
 package.bluej
 .TXT
 .DS_Store
+
+*.pyc

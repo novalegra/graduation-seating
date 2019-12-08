@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec  7 08:30:16 2019
+
+@author: annaquinlan
+"""
 class Student:
 
     def __init__(self, first_name, last_name, has_priority):

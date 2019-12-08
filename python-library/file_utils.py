@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec  7 08:30:16 2019
+
+@author: annaquinlan
+"""
 from teacher import Teacher
 
 def parse_file(input_path):
@@ -11,7 +18,7 @@ def parse_file(input_path):
             teacher_name = line[2].lower() + " " + line[3].lower()
 
             # convert str -> bool
-            if line[4].lower() in ['true', '1', 't', 'y', 'yes', 'yeah', 'yup', 'certainly', 'uh-huh']:
+            if line[4].lower() in ['true', '1', 't', 'y', 'yes', 'yeah', 'yup', 'certainly', 'uh-huh', "true']"]:
                 priority = True
             else:
                 priority = False

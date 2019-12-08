@@ -21,9 +21,21 @@ public static void coordinateGradRunner (String inputPath, String outputPath, St
         
         }
 """
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec  7 08:30:16 2019
+
+@author: annaquinlan
+"""
 from file_utils import parse_file
+from sorting_utils import sort_students, sort_students_into_rows
+
 def graduation_sorting_runner(input_path, output_path, enable_flags):
-	teachers = parse_file(input_path)
-	# function to sort teachers
-	#seating_chart = put_students_into_rows(teachers)
-	#create_output_csv(seating_chart, output_path)'''
+    teachers = sort_students(
+                    parse_file(input_path)
+                )
+    seating_chart = sort_students_into_rows(teachers)
+    # function to sort teachers
+    #seating_chart = put_students_into_rows(teachers)
+    #create_output_csv(seating_chart, output_path)'''
