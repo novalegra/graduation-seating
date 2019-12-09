@@ -8,25 +8,25 @@ Created on Sat Dec  7 08:30:16 2019
 from student import Student
 
 class Teacher:
-    students = []
-    has_student_with_priority = False
 
     def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
+        self.students = []
+        self.has_student_with_priority = False
 
     def __lt__(self, other):
         return self.has_student_with_priority
 
     def __str__(self):
         output = ""
-        if has_student_with_priority:
-            output += "!HasPriority"
+        if self.has_student_with_priority:
+            output += "!HasPriority "
 
-        for student in students:
-            output += student + ", "
+        for student in self.students[:-1]:
+            output += str(student) + ", "
 
-        output += "\n"
+        output += str(self.students[-1]) + "\n"
         return output
 
     def add_student(self, first, last, has_priority):

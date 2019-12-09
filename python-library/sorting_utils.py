@@ -20,8 +20,6 @@ def sort_students(data):
 	data.sort(key=lambda x: x.last_name, reverse=True)
 	# sort teachers by priority
 	data.sort()
-	for d in data:
-		print(d.last_name, d.has_student_with_priority)
 	return data
 
 

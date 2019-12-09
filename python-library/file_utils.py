@@ -29,10 +29,9 @@ def parse_file(input_path):
             else:
                 t = Teacher(line[2], line[3])
                 t.add_student(line[0], line[1], priority)
-                teachers.append(t);
+                teachers.append(t)
                 teachers_instantiated.append(teacher_name)
 
-    
     for t in teachers:
         t.sort_students()
 

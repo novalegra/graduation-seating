@@ -8,6 +8,8 @@ Created on Sat Dec  7 08:30:16 2019
 class Student:
 
     def __init__(self, first_name, last_name, has_priority):
+        if "['" in first_name:
+            first_name = first_name[2:]
         self.first_name = first_name
         self.last_name = last_name
         self.has_priority = has_priority
