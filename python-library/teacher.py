@@ -54,9 +54,6 @@ class Teacher:
     def get_number_of_students(self):
         return len(self.students)
 
-    def get_student(self, position):
-        return students[position] if position < len(students) else None
-
     def is_principal(self, principal_first, principal_last):
         return (self.first_name.lower() == principal_first.lower() 
                 and self.last_name.lower() == principal_last.lower()

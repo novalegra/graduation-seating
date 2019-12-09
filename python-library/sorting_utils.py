@@ -1,11 +1,3 @@
-"""
-public static ArrayList<Teacher> sortStudents (ArrayList<Teacher> data){
-        data = Utils.sortTeachersAlphabetically (data);
-        data = Utils.sortBySpeakerMusician (data);
-        
-        return data;
-    }
-"""
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -34,7 +26,7 @@ def find_principal(data, first_name, last_name):
 def deal_with_principal(principal):
 	# remove principal from their list of students because they'll sit up front
 	principal.remove_student(0)
-	ouput = []
+	output = []
 	student_list = []
 
 	while principal.get_number_of_students() > 0:
@@ -46,14 +38,14 @@ def deal_with_principal(principal):
 				t.add_instantiated_student(student)
 
 			t.sort_students()
-			ouput.append(t)
+			output.append(t)
 			student_list = []
 
-		student_list.add(principal.get_student(0))
+		student_list.append(principal.students[0])
 		principal.remove_student(0)
 
 	output.sort()
-	return ouput
+	return output
 
 
 def number_of_students_in_row(row):
@@ -64,7 +56,7 @@ def number_of_students_in_row(row):
 	return count
 
 
-def sort_students_into_rows(teachers, starting_width=40, step=2):
+def sort_students_into_rows(teachers, starting_width, step):
 	(r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14) = (
 	 	[], [], [], [], [], [], [], [], [], [], [], [], [], [], [])
 

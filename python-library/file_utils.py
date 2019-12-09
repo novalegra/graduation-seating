@@ -26,7 +26,7 @@ def parse_file(input_path):
 
             if teacher_name in teachers_instantiated:
                 position = teachers_instantiated.index(teacher_name)
-                teachers[position].addStudent(line[0], line[1], priority)
+                teachers[position].add_student(line[0], line[1], priority)
             else:
                 t = Teacher(line[2], line[3])
                 t.add_student(line[0], line[1], priority)

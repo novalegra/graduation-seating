@@ -29,7 +29,7 @@ def out_browse_func():
     display_output_path.config(text=output_path)
 
 def runner_func():
-    graduation_sorting_runner(display_input_path.cget("text"), display_output_path.cget("text"), flags_enabled)
+    graduation_sorting_runner(display_input_path.cget("text"), display_output_path.cget("text"), rows.get(), row_step.get())
 
 input_path = ""
 input_path_label = Label(root)
@@ -53,15 +53,25 @@ display_output_path.grid(row=1, column=3)
 out_browse_button = Button(root, text="Browse", command=out_browse_func)
 out_browse_button.grid(row=1, column=2)
 
-flags_enabled = StringVar()
-enable_flags_dropdown = OptionMenu(root, flags_enabled, "Yes", "No")
-enable_flags_dropdown.grid(row=2, column=2)
+rows = DoubleVar()
+row_widths = [i for i in range(2, 151)]
+row_width_dropdown = OptionMenu(root, rows, *row_widths)
+row_width_dropdown.grid(row=2, column=2)
 
-flags_label = Label(root)
-flags_label.grid(row=2, column=1)
-flags_label.config(text="Enable flags?")
+row_label = Label(root)
+row_label.grid(row=2, column=1)
+row_label.config(text="Width of Rows:")
+
+row_step = DoubleVar()
+row_steps = [i for i in range(-20, 21)]
+row_step_dropdown = OptionMenu(root, row_step, *row_steps)
+row_step_dropdown.grid(row=3, column=2)
+
+row_step_label = Label(root)
+row_step_label.grid(row=3, column=1)
+row_step_label.config(text="Increment for Each Row:")
 
 run_program_button = Button(root, text="Run Sorter", command=runner_func)
-run_program_button.grid(row=3, column=2)
+run_program_button.grid(row=4, column=2)
 
 root.mainloop()
