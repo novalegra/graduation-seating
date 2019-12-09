@@ -26,7 +26,7 @@ class Teacher:
         for student in self.students[:-1]:
             output += str(student) + ", "
 
-        output += str(self.students[-1]) + "\n"
+        output += str(self.students[-1])
         return output
 
     def add_student(self, first, last, has_priority):

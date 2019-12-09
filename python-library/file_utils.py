@@ -5,6 +5,7 @@ Created on Sat Dec  7 08:30:16 2019
 
 @author: annaquinlan
 """
+import csv
 from teacher import Teacher
 
 def parse_file(input_path):
@@ -39,3 +40,12 @@ def parse_file(input_path):
         t.add_teacher()
 
     return teachers
+
+def create_output(seating_chart, output_path):
+    with open(output_path, "wb") as result_file:
+        wr = csv.writer(result_file, delimiter=',')
+        for row in seating_chart:
+            row = [str(s) for t in row for s in t.students]
+            print(row)
+            wr.writerow(row)
+
