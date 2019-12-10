@@ -87,7 +87,7 @@ def sort_students_into_rows(teachers, starting_width, step):
 		while True:
 			if (teacher.get_number_of_students() 
 					+ number_of_students_in_row(overall_seating_chart[row]) 
-					<= starting_width + row * step
+					<= max(0, starting_width + row * step)
 					):
 				overall_seating_chart[row].append(teacher)
 				break

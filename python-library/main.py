@@ -29,7 +29,11 @@ def out_browse_func():
     display_output_path.config(text=output_path)
 
 def runner_func():
-    graduation_sorting_runner(display_input_path.cget("text"), display_output_path.cget("text"), rows.get(), row_step.get())
+    try:
+    	graduation_sorting_runner(display_input_path.cget("text"), display_output_path.cget("text"), rows.get(), row_step.get())
+    	progress_label.config(text="Success!")
+    except Exception as e:
+    	progress_label.config(text=e)
 
 input_path = ""
 input_path_label = Label(root)
@@ -73,5 +77,8 @@ row_step_label.config(text="Increment for Each Row:")
 
 run_program_button = Button(root, text="Run Sorter", command=runner_func)
 run_program_button.grid(row=4, column=2)
+
+progress_label = Label(root)
+progress_label.grid(row=5, column=2)
 
 root.mainloop()

@@ -42,10 +42,9 @@ def parse_file(input_path):
     return teachers
 
 def create_output(seating_chart, output_path):
-    with open(output_path, "wb") as result_file:
+    with open(output_path, "w") as result_file:
         wr = csv.writer(result_file, delimiter=',')
         for row in seating_chart:
             row = [str(s) for t in row for s in t.students]
-            print(row)
             wr.writerow(row)
 
