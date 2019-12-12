@@ -33,8 +33,10 @@ Hannah,  Smith,   Simone,   Rick-Kennel,  False
   4. Navigate to the folder that contains the unzipped folder. Within the folder, navigate to the main.py folder.
   
   5. Open the terminal, then type `python3 ` and drag the main.py folder on top of the terminal. The file's path should auto-populate.
+  ![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_5.png)
   
   7. Click the enter key; the graphic user interface should open.
+  ![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_6.png)
 
 
 COMMON ISSUES:
