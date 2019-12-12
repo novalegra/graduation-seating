@@ -1,14 +1,15 @@
 # How To Use
 This program takes an input .csv file, which can be easily exported from an Excel/Google Drive spreadsheet.
-It will correctly sort a maximum of ~740 students and teachers.
-
-To get proper results, the .csv data format MUST be:               
-Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if student "has priority"                                                                           
-* the algorithm will split students being handed a diploma by the principal into groups of 8, and distribute them throughout the rows. If you want to take advantage of this feature, the name of the "teacher" MUST be Simone Rick-Kennel, regardless of who the current principal is
+It will correctly sort a maximum of ~740 students and teachers.                                                                      
+* The algorithm will split students being handed a diploma by the principal into groups of 8, and distribute them throughout the rows. If you want to take advantage of this feature, the name of the "teacher" MUST be Simone Rick-Kennel, regardless of who the current principal is
                                                                                         
-# Example Inputs into CSV File
+## Preparing the CSV File
+To get proper results, the .csv data format MUST be:               
+Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if student "has priority"     
 
-![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/sample_file.png "Graduation using the graduation-seating algorithm")
+### Sample CSV File
+
+![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/sample_file.png "Image of sample file")
 
 A student named Jamie Montoya, who will get her diploma from Patty Kim and should sit up front.                                                                                  
 Jamie, Montoya, Patty, Kim, True                                                                                    
@@ -19,9 +20,21 @@ Alex,  Wong,    James,   Smith,  False
 A student named Hannah Smith, will get her diploma from the principal and needs to sit up front.                                                                   
 Hannah,  Smith,   Simone,   Rick-Kennel,  False
 
-# Instructions
-  1. Download the Github ".zip" file.
-  2. Unzip file by clicking on it.
+## Instructions
+![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_1.png)
+  1. Download the Github ".zip" file to your computer.
+  
+  2. Unzip the file by clicking on it.
+  
+  3. Navigate to your "terminal" application. For Mac users, go to the Applications folder, then open the Utilities folder.
+  
+  4. Open the terminal, then type `python3 `.
+  
+  5. Navigate to the folder that contains the unzipped folder. Within the folder, navigate to the main.py folder.
+  
+  6. Drag the main.py folder on top of the terminal.
+  
+  7. Click the enter key; the graphic user interface should open.
 
 
 COMMON ISSUES:
