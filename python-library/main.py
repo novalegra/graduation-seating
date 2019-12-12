@@ -30,7 +30,7 @@ def out_browse_func():
 
 def runner_func():
     try:
-    	graduation_sorting_runner(display_input_path.cget("text"), display_output_path.cget("text"), rows.get(), row_step.get())
+    	graduation_sorting_runner(display_input_path.cget("text"), display_output_path.cget("text"), rows.get(), row_step.get(), first.get(), last.get())
     	progress_label.config(text="Success!")
     except Exception as e:
     	progress_label.config(text=e)
@@ -58,6 +58,7 @@ out_browse_button = Button(root, text="Browse", command=out_browse_func)
 out_browse_button.grid(row=1, column=2)
 
 rows = DoubleVar()
+rows.set(20)
 row_widths = [i for i in range(2, 151)]
 row_width_dropdown = OptionMenu(root, rows, *row_widths)
 row_width_dropdown.grid(row=2, column=2)
@@ -67,6 +68,7 @@ row_label.grid(row=2, column=1)
 row_label.config(text="Width of Rows:")
 
 row_step = DoubleVar()
+row_step.set(0)
 row_steps = [i for i in range(-20, 21)]
 row_step_dropdown = OptionMenu(root, row_step, *row_steps)
 row_step_dropdown.grid(row=3, column=2)
@@ -75,10 +77,28 @@ row_step_label = Label(root)
 row_step_label.grid(row=3, column=1)
 row_step_label.config(text="Increment for Each Row:")
 
+first = StringVar()
+first.set("Simone")
+first_name_entry = Entry(root, textvariable=first)
+first_name_entry.grid(row=4, column=2)
+
+first_name_label = Label(root)
+first_name_label.grid(row=4, column=1)
+first_name_label.config(text="Principal's First Name:")
+
+last = StringVar()
+last.set("Rick-Kennell")
+last_name_entry = Entry(root, textvariable=last)
+last_name_entry.grid(row=5, column=2)
+
+last_name_label = Label(root)
+last_name_label.grid(row=5, column=1)
+last_name_label.config(text="Principal's Last Name:")
+
 run_program_button = Button(root, text="Run Sorter", command=runner_func)
-run_program_button.grid(row=4, column=2)
+run_program_button.grid(row=6, column=2)
 
 progress_label = Label(root)
-progress_label.grid(row=5, column=2)
+progress_label.grid(row=7, column=2)
 
 root.mainloop()

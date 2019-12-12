@@ -16,6 +16,16 @@ def find_principal(data, first_name, last_name):
 	return -1
 
 
+def create_new_principal(principal, students):
+	t = Teacher(principal.first_name, principal.last_name)
+
+	for student in students:
+		t.add_instantiated_student(student)
+
+	t.sort_students()
+	return t
+
+
 def deal_with_principal(principal):
 	# remove principal from their list of students because they'll sit up front
 	principal.remove_student(0)
@@ -25,17 +35,14 @@ def deal_with_principal(principal):
 	while principal.get_number_of_students() > 0:
 		# create subgroups with a maximum of 8 students
 		if len(student_list) > 7:
-			t = Teacher(principal.first_name, principal.last_name)
-
-			for student in student_list:
-				t.add_instantiated_student(student)
-
-			t.sort()
-			output.append(t)
+			output.append(create_new_principal(principal, student_list))
 			student_list = []
 
 		student_list.append(principal.students[0])
 		principal.remove_student(0)
+
+	if len(student_list) > 0:
+		output.append(create_new_principal(principal, student_list))
 
 	output.sort()
 	return output
@@ -49,14 +56,14 @@ def number_of_students_in_row(row):
 	return count
 
 
-def sort_students_into_rows(teachers, starting_width, step):
+def sort_students_into_rows(teachers, starting_width, step, principal_first_name, principal_last_name):
 	(r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14) = (
 	 	[], [], [], [], [], [], [], [], [], [], [], [], [], [], [])
 
 	overall_seating_chart = [r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14]
 	max_rows = len(overall_seating_chart)
 
-	principal_index = find_principal(teachers, "simone", "rick-kennell")
+	principal_index = find_principal(teachers, principal_first_name, principal_last_name)
 
 	# sort the principal's students into rows
 	if principal_index > -1:
@@ -74,7 +81,7 @@ def sort_students_into_rows(teachers, starting_width, step):
 
 	# sort rest of teachers
 	for teacher in teachers:
-		if teacher.is_principal("simone", "rick-kennell"):
+		if teacher.is_principal(principal_first_name, principal_last_name):
 			continue
 		row = 0
 		while True:
