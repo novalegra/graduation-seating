@@ -21,12 +21,14 @@ A student named Hannah Smith, will get her diploma from the principal and needs 
 Hannah,  Smith,   Simone,   Rick-Kennel,  False
 
 ## Instructions
-![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_1.png)
   1. Download the Github ".zip" file to your computer.
   
+  ![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_1.png)
   2. Unzip the file by clicking on it.
+  ![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_2.png)
   
   3. Navigate to your "terminal" application. For Mac users, go to the Applications folder, then open the Utilities folder.
+  ![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_3.png)
   
   4. Open the terminal, then type `python3 `.
   
