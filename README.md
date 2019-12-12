@@ -8,7 +8,7 @@ Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if
                                                                                         
 # Example Inputs into CSV File
 
-![Alt text](https://github.com/novalegra/graduation-seating/blob/master/RAM_1036.jpg "Graduation using the graduation-seating algorithm")
+![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/sample_file.png "Graduation using the graduation-seating algorithm")
 
 A student named Jamie Montoya, who will get her diploma from Patty Kim and should sit up front.                                                                                  
 Jamie, Montoya, Patty, Kim, True                                                                                    
