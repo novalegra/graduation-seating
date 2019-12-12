@@ -1,43 +1,27 @@
-This program takes an input .csv file; this can be easily exported from an Excel/Google Drive spreadsheet.
+# How To Use
+This program takes an input .csv file, which can be easily exported from an Excel/Google Drive spreadsheet.
 It will correctly sort a maximum of ~740 students and teachers.
 
 To get proper results, the .csv data format MUST be:               
-Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if student is a graduation speaker (true or false, case doesn't matter), if student is a musician (choir, band, etc; true or false, case doesn't matter)                                                                               
+Student First Name, Student Last Name, Teacher First Name, Teacher Last Name, if student "has priority"                                                                           
 * the algorithm will split students being handed a diploma by the principal into groups of 8, and distribute them throughout the rows. If you want to take advantage of this feature, the name of the "teacher" MUST be Simone Rick-Kennel, regardless of who the current principal is
                                                                                         
-EXAMPLE INPUTS INTO CSV FILE:                                                                                  
-A student named Jamie Montoya, who is a graduation speaker and will get her diploma from Patty Kim                                                                                  
-Jamie, Montoya, Patty, Kim, true,  false                                                                                       
+# Example Inputs into CSV File
 
-A student named Alex Wong, who will get his diploma from James Smith                                                                                 
-Alex,  Wong,    James,   Smith,  false, false  
+![Alt text](https://github.com/novalegra/graduation-seating/blob/master/RAM_1036.jpg "Graduation using the graduation-seating algorithm")
 
-A student named Hannah Smith, who is in band and will get her diploma from the principal                                                                                
-Hannah,  Smith,   Simone,   Rick-Kennel,  false, true
+A student named Jamie Montoya, who will get her diploma from Patty Kim and should sit up front.                                                                                  
+Jamie, Montoya, Patty, Kim, True                                                                                    
 
-INSTRUCTIONS (if running via code editor):
-  1. Run the "void main (String [] args)" of the GradRunner class.
-  2. You'll be asked for the input and export file path. Enter the FULL direct file path; backslashes are important. On Mac, you can find this by right-clicking, selecting "Get Info", and looking under the "General" header for "Where".
-        (example for Mac: /Users/yourUserName/Downloads/yourDataSpreadsheet.csv )
-  3. You'll be asked if you want to flag if a student is a speaker or a musician. Do this if you want to easily visualize where everyone is; enter "true" to enable (the "true" MUST be all lowercase).
-  4. You'll be asked if you want to print to the console. This is another way to view the data without having to open the .csv export file. Enter "true" to enable (the "true" MUST be all lowercase).
-  5. If you've done everything right, a .csv export file with the seating arrangement will be placed into wherever you specified in step 2!
+A student named Alex Wong, who will get his diploma from James Smith and doesn't need to sit up front.                                                                          
+Alex,  Wong,    James,   Smith,  False
 
-INSTRUCTIONS (if running via .jar executible with an older OS and Java JDK):
-  1. Download "GradSeating.jar" file. 
-  2. Click on file; if prompted to type in password to allow it to run, do so.
-  3. Enter the input and export file path. Enter the FULL direct file path; backslashes are important. On Mac, you can find this by right-clicking the file, selecting "Get Info", and looking under the "General" header for "Where".
-        (example for Mac: /Users/yourUserName/Downloads/yourDataSpreadsheet.csv )
-  4. Enter if you want to flag if a student is a speaker or a musician. Do this if you want to easily visualize where everyone is; enter "true" to enable (the "true" MUST be all lowercase).
-  5. If you've done everything right, a .csv export file with the seating arrangement will be placed into wherever you specified in step 2!
+A student named Hannah Smith, will get her diploma from the principal and needs to sit up front.                                                                   
+Hannah,  Smith,   Simone,   Rick-Kennel,  False
 
-INSTRUCTIONS (if running via .jar executible in BlueJ with a newer OS and Java JDK):
-  1. Download "GradSeating.jar" file. Drag into BlueJ.
-  2. Right-click the GradAlgorithmApplication; click on "Run JavaFX application."
-  3. Enter the input and export file path. Enter the FULL direct file path; backslashes are important. On Mac, you can find this by right-clicking the file, selecting "Get Info", and looking under the "General" header for "Where".
-        (example for Mac: /Users/yourUserName/Downloads/yourDataSpreadsheet.csv )
-  4. Enter if you want to flag if a student is a speaker or a musician. Do this if you want to easily visualize where everyone is; enter "true" to enable (the "true" MUST be all lowercase).
-  5. If you've done everything right, a .csv export file with the seating arrangement will be placed into wherever you specified in step 2!
+# Instructions
+  1. Download the Github ".zip" file.
+  2. Unzip file by clicking on it.
 
 
 COMMON ISSUES:
