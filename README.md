@@ -30,11 +30,9 @@ Hannah,  Smith,   Simone,   Rick-Kennel,  False
   3. Navigate to your "terminal" application. For Mac users, go to the Applications folder, then open the Utilities folder.
   ![Alt text](https://github.com/novalegra/graduation-seating/blob/python-wip/step_3.png)
   
-  4. Open the terminal, then type `python3 `.
+  4. Navigate to the folder that contains the unzipped folder. Within the folder, navigate to the main.py folder.
   
-  5. Navigate to the folder that contains the unzipped folder. Within the folder, navigate to the main.py folder.
-  
-  6. Drag the main.py folder on top of the terminal.
+  5. Open the terminal, then type `python3 ` and drag the main.py folder on top of the terminal. The file's path should auto-populate.
   
   7. Click the enter key; the graphic user interface should open.
 
