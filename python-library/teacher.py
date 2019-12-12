@@ -16,6 +16,8 @@ class Teacher:
         self.has_student_with_priority = False
 
     def __lt__(self, other):
+        if self.has_student_with_priority == other.has_student_with_priority:
+            return self.last_name < other.last_name
         return self.has_student_with_priority
 
     def __str__(self):

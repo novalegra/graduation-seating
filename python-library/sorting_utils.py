@@ -7,13 +7,6 @@ Created on Sat Dec  7 08:30:16 2019
 """
 from teacher import Teacher
 
-def sort_students(data):
-	# sort teachers alphabetically
-	data.sort(key=lambda x: x.last_name, reverse=True)
-	# sort teachers by priority
-	data.sort()
-	return data
-
 
 def find_principal(data, first_name, last_name):
 	for i in range(0, len(data)):
@@ -37,7 +30,7 @@ def deal_with_principal(principal):
 			for student in student_list:
 				t.add_instantiated_student(student)
 
-			t.sort_students()
+			t.sort()
 			output.append(t)
 			student_list = []
 
